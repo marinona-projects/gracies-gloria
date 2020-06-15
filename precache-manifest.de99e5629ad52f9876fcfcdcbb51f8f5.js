@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70547e8d685b75713bc03cfa7f910146",
+    "revision": "805c39339219e5117e10aea3fb7277ef",
     "url": "/gracies-gloria/index.html"
   },
   {
-    "revision": "ec70a966f893d122c971",
+    "revision": "88dbfb5e37b299ed008b",
     "url": "/gracies-gloria/static/css/2.dafc00e9.chunk.css"
   },
   {
-    "revision": "e8589edf58e3f173831f",
+    "revision": "f87faa95bd400e161640",
     "url": "/gracies-gloria/static/css/main.ecc0754c.chunk.css"
   },
   {
-    "revision": "ec70a966f893d122c971",
-    "url": "/gracies-gloria/static/js/2.117df5ff.chunk.js"
+    "revision": "88dbfb5e37b299ed008b",
+    "url": "/gracies-gloria/static/js/2.1ebabadd.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/gracies-gloria/static/js/2.117df5ff.chunk.js.LICENSE.txt"
+    "url": "/gracies-gloria/static/js/2.1ebabadd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e8589edf58e3f173831f",
-    "url": "/gracies-gloria/static/js/main.782671cc.chunk.js"
+    "revision": "f87faa95bd400e161640",
+    "url": "/gracies-gloria/static/js/main.c116127d.chunk.js"
   },
   {
     "revision": "815c7b9d582ab99a1408",
@@ -52,7 +52,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gracies-gloria/static/media/06.914ea944.png"
   },
   {
-    "revision": "59b697db51622c6bc30ae1eca5f49ced",
-    "url": "/gracies-gloria/static/media/background.59b697db.png"
+    "revision": "7e9ba5487fba1adb51e3b97d3807c5cc",
+    "url": "/gracies-gloria/static/media/background.7e9ba548.png"
+  },
+  {
+    "revision": "7cd905ca0d4022387faf558cb99619a5",
+    "url": "/gracies-gloria/static/media/info button hover.7cd905ca.png"
+  },
+  {
+    "revision": "1290a477f51dcbdb42b62f8f95f0ad6f",
+    "url": "/gracies-gloria/static/media/info button.1290a477.png"
   }
 ]);
