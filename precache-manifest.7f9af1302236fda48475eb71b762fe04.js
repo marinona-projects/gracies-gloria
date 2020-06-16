@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5fd5d14f1ff8f5eb9ac44869d3c77c7b",
+    "revision": "0bebc70a5d8b0f3ceda40fa6094f5c55",
     "url": "/gracies-gloria/index.html"
   },
   {
-    "revision": "88dbfb5e37b299ed008b",
+    "revision": "4e4387b7fbb5898383af",
     "url": "/gracies-gloria/static/css/2.dafc00e9.chunk.css"
   },
   {
-    "revision": "9a558792446f72861b95",
+    "revision": "7c37206429c783a58ab2",
     "url": "/gracies-gloria/static/css/main.ecc0754c.chunk.css"
   },
   {
-    "revision": "88dbfb5e37b299ed008b",
-    "url": "/gracies-gloria/static/js/2.1ebabadd.chunk.js"
+    "revision": "4e4387b7fbb5898383af",
+    "url": "/gracies-gloria/static/js/2.e75357d0.chunk.js"
   },
   {
-    "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/gracies-gloria/static/js/2.1ebabadd.chunk.js.LICENSE.txt"
+    "revision": "d837bdfa2a2c08de9ff5012f63aaaf8c",
+    "url": "/gracies-gloria/static/js/2.e75357d0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9a558792446f72861b95",
-    "url": "/gracies-gloria/static/js/main.924826b7.chunk.js"
+    "revision": "7c37206429c783a58ab2",
+    "url": "/gracies-gloria/static/js/main.bc80c3e5.chunk.js"
   },
   {
     "revision": "815c7b9d582ab99a1408",
