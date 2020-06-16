@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0bebc70a5d8b0f3ceda40fa6094f5c55",
+    "revision": "e8ed0bed3a15858ca9c2ebc02d6c7076",
     "url": "/gracies-gloria/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gracies-gloria/static/css/2.dafc00e9.chunk.css"
   },
   {
-    "revision": "7c37206429c783a58ab2",
+    "revision": "92c2326e0b75fd1ad9f2",
     "url": "/gracies-gloria/static/css/main.ecc0754c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gracies-gloria/static/js/2.e75357d0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7c37206429c783a58ab2",
-    "url": "/gracies-gloria/static/js/main.bc80c3e5.chunk.js"
+    "revision": "92c2326e0b75fd1ad9f2",
+    "url": "/gracies-gloria/static/js/main.4ea519ca.chunk.js"
   },
   {
     "revision": "815c7b9d582ab99a1408",
