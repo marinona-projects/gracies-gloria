@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gracies-gloria/static/css/main.d954f2a5.chunk.css",
-    "main.js": "/gracies-gloria/static/js/main.2ae3c3b1.chunk.js",
-    "main.js.map": "/gracies-gloria/static/js/main.2ae3c3b1.chunk.js.map",
+    "main.js": "/gracies-gloria/static/js/main.41553887.chunk.js",
+    "main.js.map": "/gracies-gloria/static/js/main.41553887.chunk.js.map",
     "runtime-main.js": "/gracies-gloria/static/js/runtime-main.049cfd83.js",
     "runtime-main.js.map": "/gracies-gloria/static/js/runtime-main.049cfd83.js.map",
     "static/css/2.dafc00e9.chunk.css": "/gracies-gloria/static/css/2.dafc00e9.chunk.css",
     "static/js/2.734df239.chunk.js": "/gracies-gloria/static/js/2.734df239.chunk.js",
     "static/js/2.734df239.chunk.js.map": "/gracies-gloria/static/js/2.734df239.chunk.js.map",
     "index.html": "/gracies-gloria/index.html",
-    "precache-manifest.2075f7e7e6fd6dc753a8597ab653e47f.js": "/gracies-gloria/precache-manifest.2075f7e7e6fd6dc753a8597ab653e47f.js",
+    "precache-manifest.ea799ebca95c3fb35856eea942f7c6c8.js": "/gracies-gloria/precache-manifest.ea799ebca95c3fb35856eea942f7c6c8.js",
     "service-worker.js": "/gracies-gloria/service-worker.js",
     "static/css/2.dafc00e9.chunk.css.map": "/gracies-gloria/static/css/2.dafc00e9.chunk.css.map",
     "static/css/main.d954f2a5.chunk.css.map": "/gracies-gloria/static/css/main.d954f2a5.chunk.css.map",
@@ -29,6 +29,6 @@
     "static/css/2.dafc00e9.chunk.css",
     "static/js/2.734df239.chunk.js",
     "static/css/main.d954f2a5.chunk.css",
-    "static/js/main.2ae3c3b1.chunk.js"
+    "static/js/main.41553887.chunk.js"
   ]
 }

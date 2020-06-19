@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gracies-gloria/precache-manifest.2075f7e7e6fd6dc753a8597ab653e47f.js"
+  "/gracies-gloria/precache-manifest.ea799ebca95c3fb35856eea942f7c6c8.js"
 );
 
 self.addEventListener('message', (event) => {
