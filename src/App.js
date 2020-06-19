@@ -22,20 +22,16 @@ function App() {
 
   return (
     <>
-      <div className="h-100">
-        <MainPage setModalVisible={setModalVisible} />
-        {buttons.map(button =>
-          <VideoModal
-            key={button.id}
-            videoUrl={button.url}
-            visible={modalVisible === button.id}
-            setModalVisible={setModalVisible}
-          />
-        )}
-      </div>
-      <div className="w-100 h-100">
-        <OnStartModal visible={modalVisible === ON_START} closeModal={() => setModalVisible(null)} isTouchscreen={isTouchscreen} />
-      </div>
+      <MainPage setModalVisible={setModalVisible} />
+      {buttons.map(button =>
+        <VideoModal
+          key={button.id}
+          videoUrl={button.url}
+          visible={modalVisible === button.id}
+          setModalVisible={setModalVisible}
+        />
+      )}
+      <OnStartModal visible={modalVisible === ON_START} closeModal={() => setModalVisible(null)} isTouchscreen={isTouchscreen} />
     </>
   );
 }
