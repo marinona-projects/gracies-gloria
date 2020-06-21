@@ -27,8 +27,11 @@ const VideoModal = ({ visible, key, videoUrl, setModalVisible }) => {
     }
 
     const handleOnStateChange = (event) => {
-        //close modal when video finished
-        if (event.data === 0) setModalVisible(false)
+        //close modal when video finished (and exit fullscreen)
+        if (event.data === 0) {
+            setModalVisible(false);
+            document.exitFullscreen();
+        }
     }
 
     return (

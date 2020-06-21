@@ -13,6 +13,7 @@ const MainPage = ({ setModalVisible, }) => {
     const [buttonOpacities, setButtonOpacities] = useState([]);
     const [clickedButtons, setClickedButtons] = useState([]);
     const [buttonStyles, setButtonStyles] = useState([]);
+    const [verticalStyle, setVerticalStyle] = useState(false);
 
     const updateWindowDimensions = () => {
         setScreenSize({ w: window.innerWidth, h: window.innerHeight });
@@ -29,8 +30,9 @@ const MainPage = ({ setModalVisible, }) => {
             setButtonStyles(buttons.map(button => ({
                 left: convertXToScreenRes(button.xPos),
                 top: convertYToScreenRes(button.yPos),
-                height: buttonNaturalSizes[button.id].h * screenSize.h / bgDim.h
+                width: buttonNaturalSizes[button.id].w * screenSize.w / bgDim.w
             })));
+            if (getImageHeight(bgNaturalSize) < screenSize.h) setVerticalStyle(true);
         }
     }, [bgNaturalSize, screenSize, buttonNaturalSizes]);
 
@@ -41,28 +43,29 @@ const MainPage = ({ setModalVisible, }) => {
         setButtonNaturalSizes(newButtonNatSizes);
     }
 
-    const getImageWidth = (bgSize) => bgSize && ((screenSize.h * bgSize.w) / bgSize.h);
+    // const getImageWidth = (bgSize) => bgSize && ((screenSize.h * bgSize.w) / bgSize.h);
+    const getImageHeight = (bgSize) => bgSize && ((screenSize.w * bgSize.h) / bgSize.w);
 
     //donat una X de la imatge (en pixels), vull la X de la pantalla (pot estar fora de la pantalla)
     const convertXToScreenRes = (xVal) => {
-        const imgWidth = getImageWidth(bgNaturalSize);
-        if (imgWidth < screenSize.w) {
-            const leftMargin = (screenSize.w - imgWidth) / 2;
-            return (xVal * imgWidth / bgNaturalSize.w) + leftMargin
-        } else {
-            const imageStartX = -(imgWidth - screenSize.w) / 2;
-            return imageStartX + (xVal * imgWidth / bgNaturalSize.w);
-        }
+        return (xVal * screenSize.w / bgNaturalSize.w);
     }
 
     const convertYToScreenRes = (yVal) => {
-        return (yVal * screenSize.h / bgNaturalSize.h);
+        const imgHeight = getImageHeight(bgNaturalSize);
+        let topOffset = 0;
+        if (imgHeight > screenSize.h) {
+            topOffset = screenSize.h - imgHeight;
+        }
+
+        return topOffset + (yVal * imgHeight / bgNaturalSize.h)
     }
 
     const commonButtonStyles = {
         position: 'absolute',
         cursor: 'pointer',
-        opacity: 0
+        opacity: 0,
+        zIndex: 1
     }
 
     const toggleButtonVisibility = (id, visible) => {
@@ -71,8 +74,10 @@ const MainPage = ({ setModalVisible, }) => {
         setButtonOpacities(newBtnOpacities);
     }
 
+    const bgStyle = verticalStyle ? { top: 0 } : { bottom: 0 }
+
     return (
-        <div className="h-100 d-flex flex-column">
+        <div className="w-100 d-flex flex-row">
             {buttons.map(({ id, img }) => (
                 <img
                     key={id}
@@ -110,8 +115,9 @@ const MainPage = ({ setModalVisible, }) => {
             <img
                 src={bgImage}
                 onLoad={onBgImgLoad}
-                className="h-100 align-self-center"
+                className="w-100 align-self-center"
                 alt="backgound image"
+                style={{ position: 'absolute', ...bgStyle }}
             />
         </div >
     )

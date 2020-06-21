@@ -21,9 +21,11 @@ const InfoModal = ({ screenSize, bgNaturalSize, bgDim, convertXToScreenRes, conv
     useEffect(() => {
         if (bgNaturalSize) {
             setInfoButtonStyles({
-                left: convertXToScreenRes(infoButtonPos.xPos),
-                top: convertYToScreenRes(infoButtonPos.yPos),
-                height: imgOriginalSize.h * screenSize.h / bgDim.h
+                // left: convertXToScreenRes(infoButtonPos.xPos),
+                right: 10,
+                bottom: 10,
+                // top: convertYToScreenRes(infoButtonPos.yPos),
+                width: imgOriginalSize.w * screenSize.w / bgDim.w
             })
         }
     }, [bgNaturalSize, screenSize, imgOriginalSize]);
@@ -48,8 +50,7 @@ const InfoModal = ({ screenSize, bgNaturalSize, bgDim, convertXToScreenRes, conv
             <img
                 key={'INFO_BUTTON_HOVER'}
                 src={infoButtonHover}
-
-                style={{ position: 'absolute', cursor: 'pointer', ...infoButtonStyles, ...infoButtonStylesHover }}
+                style={{ position: 'absolute', cursor: 'pointer', zIndex: 1, ...infoButtonStyles, ...infoButtonStylesHover }}
                 alt="info Button hover"
                 onClick={() => setModalVisibility(true)}
                 onMouseOver={() => setInfoButtonStylesHover({ opacity: 1 })}

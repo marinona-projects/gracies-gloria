@@ -9,7 +9,10 @@ const OnStartModal = ({ visible, closeModal, isTouchscreen }) => {
 
     const handleOnStateChange = (event) => {
         //close modal when video finished
-        if (event.data === 0) closeModal()
+        if (event.data === 0) {
+            closeModal();
+            document.exitFullscreen();
+        }
     }
 
     useEffect(() => {
