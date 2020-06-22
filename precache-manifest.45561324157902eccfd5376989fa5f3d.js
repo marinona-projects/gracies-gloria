@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "061fa1077d657ec1cfbfdaf3b1731879",
+    "revision": "18f52518abc8e85aaf1a0f34e199bfe2",
     "url": "/gracies-gloria/index.html"
   },
   {
-    "revision": "8b3a0f2f1d943127cabc",
+    "revision": "8bfae48b1df5be8fcace",
     "url": "/gracies-gloria/static/css/2.dafc00e9.chunk.css"
   },
   {
-    "revision": "d203f540512180c88778",
+    "revision": "feb34f8e5ab9daf74ccd",
     "url": "/gracies-gloria/static/css/main.d954f2a5.chunk.css"
   },
   {
-    "revision": "8b3a0f2f1d943127cabc",
-    "url": "/gracies-gloria/static/js/2.734df239.chunk.js"
+    "revision": "8bfae48b1df5be8fcace",
+    "url": "/gracies-gloria/static/js/2.5cbfb4bf.chunk.js"
   },
   {
     "revision": "d837bdfa2a2c08de9ff5012f63aaaf8c",
-    "url": "/gracies-gloria/static/js/2.734df239.chunk.js.LICENSE.txt"
+    "url": "/gracies-gloria/static/js/2.5cbfb4bf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d203f540512180c88778",
-    "url": "/gracies-gloria/static/js/main.626cdb38.chunk.js"
+    "revision": "feb34f8e5ab9daf74ccd",
+    "url": "/gracies-gloria/static/js/main.3f1f3600.chunk.js"
   },
   {
     "revision": "815c7b9d582ab99a1408",
@@ -56,11 +56,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gracies-gloria/static/media/background.7e9ba548.png"
   },
   {
-    "revision": "7cd905ca0d4022387faf558cb99619a5",
-    "url": "/gracies-gloria/static/media/info button hover.7cd905ca.png"
+    "revision": "8118df23a89743068414386c76d2b07c",
+    "url": "/gracies-gloria/static/media/info button hover.8118df23.png"
   },
   {
-    "revision": "1290a477f51dcbdb42b62f8f95f0ad6f",
-    "url": "/gracies-gloria/static/media/info button.1290a477.png"
+    "revision": "833b12c415ca86baab5c018432aa26d8",
+    "url": "/gracies-gloria/static/media/info button.833b12c4.png"
   }
 ]);
