@@ -22,8 +22,8 @@ const InfoModal = ({ screenSize, bgNaturalSize, bgDim, convertXToScreenRes, conv
         if (bgNaturalSize) {
             setInfoButtonStyles({
                 // left: convertXToScreenRes(infoButtonPos.xPos),
-                right: 10,
-                bottom: 10,
+                right: 20,
+                top: 20,
                 // top: convertYToScreenRes(infoButtonPos.yPos),
                 width: imgOriginalSize.w * screenSize.w / bgDim.w
             })
@@ -63,24 +63,18 @@ const InfoModal = ({ screenSize, bgNaturalSize, bgDim, convertXToScreenRes, conv
                 width={600}
                 footer={null}
             >
-                <p>La <strong>Glòria</strong> acaba una etapa important de la seva vida i es jubila. 🎓</p>
-                <p>{`Som molts els que sentíem la necessitat d'acompanyar-la en aquest moment i d'agrair-li haver format part del nostre camí.`}</p>
-                <p>
-                    {`Malgrat la situació estranya que estem vivint, i amb l'ajuda màgica de la Lluna Bruna 🌙, hem trobat la manera de compartir amb ella
-                    aquest tancament i de dedicar-li tots unes paraules.`}
-                </p>
-
-                <p>
-                    <strong>🖱 Hi vols jugar tu també? </strong>
-                    {`Busca a la classe de les llunes 6 objectes que s'il·luminin i veuràs com surt un munt de gent! 
-                    De mica en mica la classe s'anirà omplint de colors 🌈 `}
-                </p>
+                <div className="d-flex align-items-center p-2 my-3" style={{ backgroundColor: '#e8e8e8', borderRadius: 14 }}>
+                    <p className="flex-grow-2 mr-3">
+                        Vídeo d'agraïment de la Glòria 🥰
+                    </p>
+                    <YouTube videoId={"zrKhetq7vf0"} opts={YToptsSmall} className="w-100 flex-grow-3" onReady={(event) => setYtPlayer(event.target)} />
+                </div>
 
                 <div className="d-flex align-items-center p-2 mb-3" style={{ backgroundColor: '#e8e8e8', borderRadius: 14 }}>
-                    <p className="flex-grow-2">
+                    <YouTube videoId={"KX0pVohZA1c"} opts={YToptsSmall} className="w-100 flex-grow-3" onReady={(event) => setYtPlayer(event.target)} />
+                    <p className="flex-grow-2 ml-3">
                         Moments divertits de la creació d'aquest projecte 😂
                     </p>
-                    <YouTube videoId={"KX0pVohZA1c"} opts={YToptsSmall} className="w-100 flex-grow-3" onReady={(event) => setYtPlayer(event.target)} />
                 </div>
 
                 <h5>Crèdits</h5>

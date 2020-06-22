@@ -43,7 +43,7 @@ const VideoModal = ({ visible, key, videoUrl, setModalVisible }) => {
             footer={null}
             style={{ height: '90%' }}
         >
-            <YouTube videoId={videoUrl} opts={YTopts} onReady={handleReady} onStateChange={handleOnStateChange} />
+            <YouTube videoId={videoUrl} opts={YTopts} onReady={handleReady} onStateChange={handleOnStateChange} className='mt-3' />
         </Modal>
     )
 }
